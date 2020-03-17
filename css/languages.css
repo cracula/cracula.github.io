@@ -1,0 +1,151 @@
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body 
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    text-align: center;
+    font-size: 1em;
+    color: #524ce0;
+	line-height: 150%;
+	background-color: white;
+	}
+
+/*HEADER SECTION*/
+header img {
+	width: 100%;
+	height: auto;
+}
+
+/*NAV BAR*/
+nav ul
+{
+	font-size: 1.3em;
+	list-style-type: none;
+	padding-left:2%;
+	text-align: center;
+}
+
+nav li
+{
+	padding: 1%;;
+	display: inline-block;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+nav li a
+{
+	color: #cc6600;
+	text-decoration: none;
+	padding: 2% 0% 2% 0%;
+	font-weight:bold;
+	a: hover
+}
+
+
+
+/*CONTENT*/
+
+
+figure
+{
+	border: 1px solid #d3d3d3;
+	padding: 3%;
+	float:left;
+	max-width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+figure img
+{
+	padding: 1%;
+}
+
+figure figcaption
+{
+	width:100%;
+	text-align: center;
+	height: 20em;
+}
+
+main#mainBody
+{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article img
+{
+
+	margin-top: 2%;
+	margin-right: 2%;	
+}
+
+article
+{
+	clear:left;
+	padding: 2%;
+}
+
+article h1
+{
+	padding-bottom: 2%;
+}
+
+footer
+{
+	clear:left;
+	max-width: 1200px;
+	
+color: #d3d3d3;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width:720px) /*min-width applies when viewport is equal or greater than th wodth*/
+{
+nav li {
+	border-bottom: none; /*Overwriting the border bottom on the <li> on mobile CSS*/
+	display: inline-block; /*displays menu side by side in line*/
+	width: 25%;
+}
+
+header img {
+	width: 100%;
+	height: auto;
+}
+nav ul
+{
+	
+	font-size: 1.3em;
+	list-style-type: none;
+	padding-left:0.2%;
+	text-align: center;
+}
+
+nav li
+{
+	padding: 0.2%;;
+	display: inline-block;
+	border-bottom: 1px solid #d3d3d3;
+}
+figure {
+	border: 1px solid #d3d3d3;
+	padding: 1%;
+	float:left;
+	max-width: 25%;
+	height: auto;
+	margin: auto;
+}
+figure figcaption 
+{
+	width:100%;
+	text-align: center;
+	height: 20em;
+}
+
+}
